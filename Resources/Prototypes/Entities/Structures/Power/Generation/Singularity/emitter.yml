@@ -26,14 +26,14 @@
     sprite: Structures/Power/Generation/Singularity/emitter.rsi
     netsync: false
     layers:
-    - state: emitter # Corvax-Resprite
+    - state: emitter2
     - state: beam
       shader: unshaded
       visible: false
       map: ["enum.EmitterVisualLayers.Lights"]
-    - state: unlock # Corvax-Resprite
+    - state: lock
       shader: unshaded
-#      visible: false # Corvax-Resprite
+      visible: false
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
   - type: Gun

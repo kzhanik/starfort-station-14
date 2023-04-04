@@ -62,7 +62,7 @@
     lowPressureMultiplier: 1000
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase  # Corvax-Resprite
+  parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitDeathsquad
   noSpawn: true
   name: deathsquad hardsuit helmet
@@ -72,8 +72,6 @@
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
-  - type: PointLight  # Corvax-Resprite
-    color: cyan
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -260,7 +258,7 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSyndie
   noSpawn: true
-  name: blood red hardsuit helmet
+  name: blood-red hardsuit helmet
   description: An advanced red hardsuit helmet designed for work in special operations.
   components:
   - type: Sprite
@@ -349,7 +347,7 @@
     lowPressureMultiplier: 10000
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase  # Corvax-Resprite
+  parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitCybersun
   noSpawn: true
   name: cybersun juggernaut helmet
@@ -359,8 +357,6 @@
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
-  - type: PointLight  # Corvax-Resprite
-    color: red
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
@@ -470,8 +466,8 @@
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertleader.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertleader.rsi
-  - type: PointLight # Corvax-Resprite
-    color: cyan
+  - type: PointLight
+    color: "#addbff"
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitERTLeader
