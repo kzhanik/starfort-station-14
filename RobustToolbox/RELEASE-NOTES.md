@@ -54,6 +54,16 @@ END TEMPLATE-->
 *None yet*
 
 
+## 0.96.4.0
+
+
+## 0.96.3.0
+
+### Other
+
+* Updated server SQLitePCLRaw to 2.1.4.
+
+
 ## 0.96.2.0
 
 
