@@ -142728,4 +142728,12 @@ entities:
   - pos: -10.931509,1.5479131
     parent: 1
     type: Transform
+- uid: 14324
+  type: SpawnPointCCAgent
+  components:
+  - pauseTime: 0
+    type: MetaData
+  - pos: -86.5,-17.5
+    parent: 1
+    type: Transform
 ...

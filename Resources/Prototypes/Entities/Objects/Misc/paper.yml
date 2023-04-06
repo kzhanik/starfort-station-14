@@ -557,3 +557,15 @@
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: stamp-ce
+    
+- type: entity
+  name: IAA rubber stamp
+  parent: RubberStampMime
+  id: RubberStampIAA
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-iaa
+    stampState: "paper_stamp-cent"
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: stamp-iaa

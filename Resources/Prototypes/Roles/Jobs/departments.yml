@@ -45,6 +45,7 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
+  - CCAgent
 
 - type: department
   id: Engineering

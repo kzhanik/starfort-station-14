@@ -587,3 +587,15 @@
   - type: IdCard
     jobTitle: Cluwne
   - type: Unremoveable
+
+- type: entity
+  parent: IDCardStandard
+  id: CCAgentIDCard
+  name: CentCom Agent ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: default
+        - state: idlawyer
+    - type: PresetIdCard
+      job: CCAgent

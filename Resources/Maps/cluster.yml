@@ -74912,4 +74912,10 @@ entities:
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+- uid: 9293
+  type: SpawnPointCCAgent
+  components:
+  - pos: 20.5,-29.5
+    parent: 127
+    type: Transform
 ...

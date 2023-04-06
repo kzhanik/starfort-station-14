@@ -732,3 +732,14 @@
         - Write
   - type: Unremoveable
 
+- type: entity
+  parent: BasePDA
+  id: CCAgentPDA
+  name: CentCom Agent PDA
+  description: For some kinds of clown.
+  components:
+  - type: PDA
+    id: CCAgentIDCard
+    state: pda-ert
+  - type: Icon
+    state: pda-ert

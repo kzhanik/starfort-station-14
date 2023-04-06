@@ -97012,4 +97012,10 @@ entities:
   - pos: -1.5,26.5
     parent: 0
     type: Transform
+- uid: 12558
+  type: SpawnPointCCAgent
+  components:
+  - pos: -19.5,16.5
+    parent: 0
+    type: Transform
 ...
