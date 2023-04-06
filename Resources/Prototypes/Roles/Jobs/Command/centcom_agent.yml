@@ -33,7 +33,8 @@
     shoes: ClothingShoesBootsLaceup
     id: CCAgentPDA
     ears: ClothingHeadsetIAA
-    # TODO add copy of space law
+    eyes: ClothingEyesGlassesSecurity
+    pocket1: RubberStampIAA
   inhand:
     right hand: BriefcaseBrownFilled
   innerclothingskirt: ClothingUniformJumpskirtLawyerBlack
