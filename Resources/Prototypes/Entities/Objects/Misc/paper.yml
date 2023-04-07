@@ -175,7 +175,7 @@
     - type: Paper
       stampState: paper_stamp-cent
       stampedBy:
-        - CentComm
+        - ЦентКом #CentComm
 
 - type: entity
   parent: StationGoalPaper
@@ -240,7 +240,7 @@
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: PresentTrash
+      - id: TrashEnvelope
       - id: StationGoalShuttle
         orGroup: GiftPool
       - id: StationGoalRestoration
@@ -257,6 +257,22 @@
         orGroup: GiftPool
     sound:
       path: /Audio/Effects/unwrap.ogg
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    netsync: false
+    layers:
+      - state: envelope_station_goal
+
+- type: entity
+  id: TrashEnvelope
+  parent: BaseItem
+  name: Trash
+  description: 'Crumpled piece of paper.'
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: envelope_unwrapped
+  - type: Recyclable
 
 - type: entity
   name: pen

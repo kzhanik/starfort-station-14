@@ -299,6 +299,12 @@
 	{
       "name": "stamp-psychologist"
     },
+	{
+      "name": "envelope_station_goal"
+    },
+	{
+      "name": "envelope_unwrapped"
+    },
     {
       "name": "clipboard-equipped-BELT",
       "directions": 4
