@@ -167,6 +167,98 @@
   - type: NukeCodePaper
 
 - type: entity
+  parent: Paper
+  id: StationGoalPaper
+  localizationId: station-goal-fax-paper-name
+  description: "It looks like you have a lot of work to do."
+  components:
+    - type: Paper
+      stampState: paper_stamp-cent
+      stampedBy:
+        - CentComm
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalShuttle
+  components:
+    - type: Paper
+      content: station-goal-shuttle
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalRestoration
+  components:
+    - type: Paper
+      content: station-goal-restoration
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalOrbitalStorage
+  components:
+    - type: Paper
+      content: station-goal-orbital-storage
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalArtifacts
+  components:
+    - type: Paper
+      content: station-goal-artifacts
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalRipley
+  components:
+    - type: Paper
+      content: station-goal-ripley
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalMoney
+  components:
+    - type: Paper
+      content: station-goal-money
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalProvisions
+  components:
+    - type: Paper
+      content: station-goal-provisions
+
+- type: entity
+  parent: StationGoalPaper
+  id: StationGoalMedicines
+  components:
+    - type: Paper
+      content: station-goal-medicines
+
+- type: entity
+  id: StationGoalRandom
+  parent: [PresentBase, BaseItem]
+  suffix: Filled Safe
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: PresentTrash
+      - id: StationGoalShuttle
+        orGroup: GiftPool
+      - id: StationGoalRestoration
+        orGroup: GiftPool
+      - id: StationGoalOrbitalStorage
+        orGroup: GiftPool
+      - id: StationGoalRipley
+        orGroup: GiftPool
+      - id: StationGoalMoney
+        orGroup: GiftPool
+      - id: StationGoalProvisions
+        orGroup: GiftPool
+      - id: StationGoalMedicines
+        orGroup: GiftPool
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
   name: pen
   parent: BaseItem
   id: Pen
