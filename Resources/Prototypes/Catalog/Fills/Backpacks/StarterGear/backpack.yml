@@ -285,4 +285,13 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackExpedition
+  id: ClothingBackpackExpeditionFilled
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvival
 

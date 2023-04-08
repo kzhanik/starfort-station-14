@@ -1,0 +1,30 @@
+- type: job
+  id: FieldTrooper
+  name: job-name-field-trooper
+  description: job-description-field-trooper
+  playTimeTracker: JobFieldTrooper
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 18000 #5 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 3600 #1 hrs
+  startingGear: FieldTrooperGear
+  icon: "FieldTrooper"
+  supervisors: job-supervisors-rd
+  canBeAntag: false
+  access:
+  - Brig
+  - Maintenance
+  - Field
+  - External
+
+- type: startingGear
+  id: FieldTrooperGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitFieldTrooper
+    back: ClothingBackpackExpeditionFilled
+    shoes: ClothingShoesBootsCombatFilled
+    id: SecurityPDA
+    ears: ClothingHeadsetSecurity
+    belt: ClothingBeltAssault
