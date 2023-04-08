@@ -86,7 +86,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: BoxSurvival
+      - id: BoxSurvivalMedical
       - id: Flash
       #- id: TelescopicBaton
 
@@ -108,7 +108,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: BoxSurvival
+      - id: BoxSurvivalSecurity
       - id: Flash
 
 - type: entity
@@ -145,7 +145,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: BoxSurvival
+      - id: BoxSurvivalMedical
 
 - type: entity
   noSpawn: true
@@ -186,7 +186,7 @@
   components:
     - type: StorageFill
       contents:
-      - id: BoxSurvival
+      - id: BoxSurvivalSecurity
       - id: Lighter
       - id: CigPackBlack
       - id: BoxForensicPad
