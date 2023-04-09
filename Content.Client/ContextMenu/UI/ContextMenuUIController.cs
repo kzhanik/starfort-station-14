@@ -1,10 +1,8 @@
 using System.Threading;
-using Content.Client.CombatMode;
 using Content.Client.Gameplay;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Timer = Robust.Shared.Timing.Timer;
-
 namespace Content.Client.ContextMenu.UI
 {
     /// <summary>
@@ -15,7 +13,7 @@ namespace Content.Client.ContextMenu.UI
     /// <remarks>
     ///     This largely involves setting up timers to open and close sub-menus when hovering over other menu elements.
     /// </remarks>
-    public sealed class ContextMenuUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>, IOnSystemChanged<CombatModeSystem>
+    public sealed class ContextMenuUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>
     {
         public static readonly TimeSpan HoverDelay = TimeSpan.FromSeconds(0.2);
 
@@ -207,21 +205,6 @@ namespace Content.Client.ContextMenu.UI
             element.OnKeyBindDown -= args => OnKeyBindDown(element, args);
 
             menu.InvalidateMeasure();
-        }
-
-        private void OnCombatModeUpdated()
-        {
-            Close();
-        }
-
-        public void OnSystemLoaded(CombatModeSystem system)
-        {
-            system.LocalPlayerCombatModeUpdated += OnCombatModeUpdated;
-        }
-
-        public void OnSystemUnloaded(CombatModeSystem system)
-        {
-            system.LocalPlayerCombatModeUpdated -= OnCombatModeUpdated;
         }
     }
 }

@@ -30,6 +30,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Player;
 using Robust.Shared.Players;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
@@ -250,7 +251,7 @@ namespace Content.Shared.Interaction
             if (target != null && Deleted(target.Value))
                 return;
 
-            if (!altInteract && TryComp(user, out CombatModeComponent? combatMode) && combatMode.IsInCombatMode)
+            if (!altInteract && TryComp(user, out SharedCombatModeComponent? combatMode) && combatMode.IsInCombatMode)
             {
                 // Eat the input
                 return;
@@ -283,7 +284,7 @@ namespace Content.Shared.Interaction
                 : !checkAccess || InRangeUnobstructed(user, target.Value); // permits interactions with wall mounted entities
 
             // Does the user have hands?
-            if (!TryComp(user, out HandsComponent? hands) || hands.ActiveHand == null)
+            if (!TryComp(user, out SharedHandsComponent? hands) || hands.ActiveHand == null)
             {
                 var ev = new InteractNoHandEvent(user, target, coordinates);
                 RaiseLocalEvent(user, ev);
@@ -876,7 +877,7 @@ namespace Content.Shared.Interaction
                 return false;
 
             // Does the user have hands?
-            if (!HasComp<HandsComponent>(user))
+            if (!HasComp<SharedHandsComponent>(user))
                 return false;
 
             var activateMsg = new ActivateInWorldEvent(user, used);

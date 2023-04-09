@@ -30,7 +30,7 @@ public sealed class RenameCommand : IConsoleCommand
         }
 
         var name = args[1];
-        if (name.Length > IdCardConsoleComponent.MaxFullNameLength)
+        if (name.Length > SharedIdCardConsoleComponent.MaxFullNameLength)
         {
             shell.WriteLine("Name is too long.");
             return;

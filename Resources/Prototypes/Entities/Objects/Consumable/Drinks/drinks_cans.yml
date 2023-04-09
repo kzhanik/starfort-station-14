@@ -44,12 +44,6 @@
           False: {state: "icon"}
   - type: Spillable
     solution: drink
-  - type: MeleeWeapon
-    soundNoDamage:
-      path: "/Audio/Effects/Fluids/splat.ogg"
-    damage:
-      types:
-        Blunt: 0
   - type: ItemCooldown
   - type: Recyclable
   - type: SpaceGarbage
@@ -392,7 +386,7 @@
     sprite: Objects/Consumable/Drinks/shamblersjuice.rsi
   - type: Item
     sprite: Objects/Consumable/Drinks/shamblersjuice.rsi
-
+    
 - type: entity
   parent: DrinkCanBaseFull
   id: DrinkPwrGameCan

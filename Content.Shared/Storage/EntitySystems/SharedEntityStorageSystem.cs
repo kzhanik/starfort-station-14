@@ -121,7 +121,7 @@ public abstract class SharedEntityStorageSystem : EntitySystem
 
     private void OnRelayMovement(EntityUid uid, SharedEntityStorageComponent component, ref ContainerRelayMovementEntityEvent args)
     {
-        if (!HasComp<HandsComponent>(args.Entity))
+        if (!HasComp<SharedHandsComponent>(args.Entity))
             return;
 
         if (_timing.CurTime < component.LastInternalOpenAttempt + SharedEntityStorageComponent.InternalOpenAttemptDelay)
@@ -311,7 +311,7 @@ public abstract class SharedEntityStorageSystem : EntitySystem
         if (!Resolve(target, ref component))
             return false;
 
-        if (!HasComp<HandsComponent>(user))
+        if (!HasComp<SharedHandsComponent>(user))
             return false;
 
         if (component.IsWeldedShut)
