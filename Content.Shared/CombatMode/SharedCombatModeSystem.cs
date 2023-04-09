@@ -15,12 +15,12 @@ namespace Content.Shared.CombatMode
         {
             base.Initialize();
 
-            SubscribeLocalEvent<CombatModeComponent, ComponentStartup>(OnStartup);
-            SubscribeLocalEvent<CombatModeComponent, ComponentShutdown>(OnShutdown);
-            SubscribeLocalEvent<CombatModeComponent, ToggleCombatActionEvent>(OnActionPerform);
+            SubscribeLocalEvent<SharedCombatModeComponent, ComponentStartup>(OnStartup);
+            SubscribeLocalEvent<SharedCombatModeComponent, ComponentShutdown>(OnShutdown);
+            SubscribeLocalEvent<SharedCombatModeComponent, ToggleCombatActionEvent>(OnActionPerform);
         }
 
-        private void OnStartup(EntityUid uid, CombatModeComponent component, ComponentStartup args)
+        private void OnStartup(EntityUid uid, SharedCombatModeComponent component, ComponentStartup args)
         {
             if (component.CombatToggleAction == null
                 && _protoMan.TryIndex(component.CombatToggleActionId, out InstantActionPrototype? toggleProto))
@@ -32,50 +32,24 @@ namespace Content.Shared.CombatMode
                 _actionsSystem.AddAction(uid, component.CombatToggleAction, null);
         }
 
-        private void OnShutdown(EntityUid uid, CombatModeComponent component, ComponentShutdown args)
+        private void OnShutdown(EntityUid uid, SharedCombatModeComponent component, ComponentShutdown args)
         {
             if (component.CombatToggleAction != null)
                 _actionsSystem.RemoveAction(uid, component.CombatToggleAction);
         }
 
-        private void OnActionPerform(EntityUid uid, CombatModeComponent component, ToggleCombatActionEvent args)
-        {
-            if (args.Handled)
-                return;
-
-            SetInCombatMode(uid, !component.IsInCombatMode, component);
-            args.Handled = true;
-        }
-
-        public void SetCanDisarm(EntityUid entity, bool canDisarm, CombatModeComponent? component = null)
-        {
-            if (!Resolve(entity, ref component))
-                return;
-
-            component.CanDisarm = canDisarm;
-        }
-
-        public bool IsInCombatMode(EntityUid? entity, CombatModeComponent? component = null)
+        public bool IsInCombatMode(EntityUid? entity, SharedCombatModeComponent? component = null)
         {
             return entity != null && Resolve(entity.Value, ref component, false) && component.IsInCombatMode;
         }
 
-        public virtual void SetInCombatMode(EntityUid entity, bool inCombatMode,
-            CombatModeComponent? component = null)
+        private void OnActionPerform(EntityUid uid, SharedCombatModeComponent component, ToggleCombatActionEvent args)
         {
-            if (!Resolve(entity, ref component))
+            if (args.Handled)
                 return;
 
-            component.IsInCombatMode = inCombatMode;
-        }
-
-        public virtual void SetActiveZone(EntityUid entity, TargetingZone zone,
-            CombatModeComponent? component = null)
-        {
-            if (!Resolve(entity, ref component))
-                return;
-
-            component.ActiveZone = zone;
+            component.IsInCombatMode = !component.IsInCombatMode;
+            args.Handled = true;
         }
 
         [Serializable, NetSerializable]

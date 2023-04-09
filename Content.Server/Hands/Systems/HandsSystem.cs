@@ -1,3 +1,4 @@
+using Content.Server.Hands.Components;
 using Content.Server.Popups;
 using Content.Server.Pulling;
 using Content.Server.Stack;
@@ -109,7 +110,7 @@ namespace Content.Server.Hands.Systems
             RaiseNetworkEvent(new PickupAnimationEvent(item, initialPosition, finalPosition), filter);
         }
 
-        private void HandleEntityRemoved(EntityUid uid, HandsComponent component, EntRemovedFromContainerMessage args)
+        private void HandleEntityRemoved(EntityUid uid, SharedHandsComponent component, EntRemovedFromContainerMessage args)
         {
             if (!Deleted(args.Entity) && TryComp(args.Entity, out HandVirtualItemComponent? @virtual))
                 _virtualSystem.Delete(@virtual, uid);
@@ -185,7 +186,7 @@ namespace Content.Server.Hands.Systems
             if (playerSession.AttachedEntity is not {Valid: true} player ||
                 !Exists(player) ||
                 player.IsInContainer() ||
-                !TryComp(player, out HandsComponent? hands) ||
+                !TryComp(player, out SharedHandsComponent? hands) ||
                 hands.ActiveHandEntity is not EntityUid throwEnt ||
                 !_actionBlockerSystem.CanThrow(player, throwEnt))
                 return false;
@@ -247,7 +248,7 @@ namespace Content.Server.Hands.Systems
             if (!_actionBlockerSystem.CanInteract(plyEnt, null))
                 return;
 
-            if (!TryComp<HandsComponent>(plyEnt, out var hands) ||  hands.ActiveHand == null)
+            if (!TryComp<SharedHandsComponent>(plyEnt, out var hands) ||  hands.ActiveHand == null)
                 return;
 
             if (!_inventorySystem.TryGetSlotEntity(plyEnt, equipmentSlot, out var slotEntity) ||

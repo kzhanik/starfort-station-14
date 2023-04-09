@@ -1,6 +1,6 @@
+using Content.Server.CombatMode;
 using Content.Server.NPC.Components;
 using Content.Server.NPC.Events;
-using Content.Shared.CombatMode;
 using Content.Shared.NPC;
 using Content.Shared.Weapons.Melee;
 using Robust.Shared.Map;
@@ -69,7 +69,7 @@ public sealed partial class NPCCombatSystem
     {
         if (TryComp<CombatModeComponent>(uid, out var combatMode))
         {
-            _combat.SetInCombatMode(uid, false, combatMode);
+            combatMode.IsInCombatMode = false;
         }
 
         _steering.Unregister(component.Owner);
@@ -79,7 +79,7 @@ public sealed partial class NPCCombatSystem
     {
         if (TryComp<CombatModeComponent>(uid, out var combatMode))
         {
-            _combat.SetInCombatMode(uid, true, combatMode);
+            combatMode.IsInCombatMode = true;
         }
 
         // TODO: Cleanup later, just looking for parity for now.
