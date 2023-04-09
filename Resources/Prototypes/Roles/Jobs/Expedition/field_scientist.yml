@@ -19,7 +19,7 @@
   access:
   - Research
   - Maintenance
-  - Field
+  - Expedition
   - External
   extendedAccess:
   - Brig
@@ -30,6 +30,6 @@
     jumpsuit: ClothingUniformJumpsuitFieldScientist
     back: ClothingBackpackExpeditionFilled
     shoes: ClothingShoesBootsCombatFilled
-    id: SciencePDA
-    ears: ClothingHeadsetScience
+    id: FieldScientistPDA
+    ears: ClothingHeadsetExpedition
     belt: ClothingBeltUtilityFilled
