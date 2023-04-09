@@ -19,7 +19,7 @@
   access:
   - Medical
   - Maintenance
-  - Field
+  - Expedition
   - External
   extendedAccess:
   - Chemistry
@@ -31,6 +31,6 @@
     jumpsuit: ClothingUniformJumpsuitFieldMedic
     back: ClothingBackpackExpeditionFilled
     shoes: ClothingShoesBootsCombatFilled
-    id: MedicalPDA
-    ears: ClothingHeadsetMedical
+    id: FieldMedicPDA
+    ears: ClothingHeadsetExpedition
     belt: ClothingBeltMedicalFilled

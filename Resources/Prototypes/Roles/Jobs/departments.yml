@@ -91,7 +91,7 @@
 - type: department
   id: Expedition
   description: department-Expedition-description
-  color: "#4f5819"
+  color: "#21421e"
   roles:
   - ResearchDirector
   - FieldTrooper
