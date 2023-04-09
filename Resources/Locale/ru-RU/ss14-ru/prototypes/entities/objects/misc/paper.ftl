@@ -103,3 +103,6 @@ ent-RubberStampSyndicate = печать Синдиката
 ent-RubberStampCE = печать старшего инженера
     .desc = { ent-RubberStampMime.desc }
     .suffix = { "" }
+ent-RubberAdmemekhuynya = печать долбоеба
+    .desc = Специально для тех, кто получает двойки по русскому языку.
+    .suffix = Адмемы

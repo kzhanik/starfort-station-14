@@ -685,3 +685,15 @@
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: stamp-iaa
+
+- type: entity
+  name: Khuynya peredelyvay
+  parent: RubberStampMime
+  id: RubberAdmemekhuynya
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-khuynya
+    stampState: "paper_stamp-denied"
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: stamp-deny
