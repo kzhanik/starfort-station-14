@@ -169,7 +169,7 @@
 - type: entity
   parent: Paper
   id: StationGoalPaper
-  localizationId: station-goal-fax-paper-name
+  name: station goal
   description: "It looks like you have a lot of work to do."
   components:
     - type: Paper
@@ -180,6 +180,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalShuttle
+  suffix: Shuttle
   components:
     - type: Paper
       content: station-goal-shuttle
@@ -187,6 +188,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalRestoration
+  suffix: Restoration
   components:
     - type: Paper
       content: station-goal-restoration
@@ -194,6 +196,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalOrbitalStorage
+  suffix: OrbitalStorage
   components:
     - type: Paper
       content: station-goal-orbital-storage
@@ -201,6 +204,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalArtifacts
+  suffix: Artifacts
   components:
     - type: Paper
       content: station-goal-artifacts
@@ -208,6 +212,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalRipley
+  suffix: Ripley
   components:
     - type: Paper
       content: station-goal-ripley
@@ -215,6 +220,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalMoney
+  suffix: Money
   components:
     - type: Paper
       content: station-goal-money
@@ -222,6 +228,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalProvisions
+  suffix: Provisions
   components:
     - type: Paper
       content: station-goal-provisions
@@ -229,6 +236,7 @@
 - type: entity
   parent: StationGoalPaper
   id: StationGoalMedicines
+  suffix: Medicines
   components:
     - type: Paper
       content: station-goal-medicines
@@ -266,7 +274,7 @@
 - type: entity
   id: TrashEnvelope
   parent: BaseItem
-  name: Trash
+  name: trash
   description: 'Crumpled piece of paper.'
   components:
   - type: Sprite
