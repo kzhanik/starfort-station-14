@@ -9,8 +9,7 @@
   skinColoration: TintedHues
   maleFirstNames: DionaFirst
   femaleFirstNames: DionaFirst
-  maleLastNames: DionaLast # Corvax-LastnameGender
-  femaleLastNames: DionaLast # Corvax-LastnameGender
+  lastNames: DionaLast
   naming: TheFirstofLast
 
 - type: speciesBaseSprites
