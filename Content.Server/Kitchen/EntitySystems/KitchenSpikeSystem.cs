@@ -1,5 +1,4 @@
 using Content.Server.Administration.Logs;
-using Content.Server.Body.Systems;
 using Content.Server.Kitchen.Components;
 using Content.Server.Popups;
 using Content.Shared.Database;
@@ -7,18 +6,18 @@ using Content.Shared.DoAfter;
 using Content.Shared.DragDrop;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
+using Content.Shared.Nutrition.Components;
+using Robust.Shared.Player;
+using Content.Shared.Storage;
+using Robust.Shared.Random;
+using static Content.Shared.Kitchen.Components.SharedKitchenSpikeComponent;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Kitchen;
-using Content.Shared.Kitchen.Components;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
-using Content.Shared.Nutrition.Components;
 using Content.Shared.Popups;
-using Content.Shared.Storage;
 using Robust.Server.GameObjects;
-using Robust.Shared.Player;
-using Robust.Shared.Random;
-using static Content.Shared.Kitchen.Components.KitchenSpikeComponent;
+using Content.Server.Body.Systems;
 
 namespace Content.Server.Kitchen.EntitySystems
 {

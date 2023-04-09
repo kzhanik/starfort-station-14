@@ -13,7 +13,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
 
         var time = GameTiming.CurTime;
         var xformQuery = GetEntityQuery<TransformComponent>();
-        var handsQuery = GetEntityQuery<HandsComponent>();
+        var handsQuery = GetEntityQuery<SharedHandsComponent>();
 
         var enumerator = EntityQueryEnumerator<ActiveDoAfterComponent, DoAfterComponent>();
         while (enumerator.MoveNext(out var uid, out var active, out var comp))
@@ -28,7 +28,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
         DoAfterComponent comp,
         TimeSpan time,
         EntityQuery<TransformComponent> xformQuery,
-        EntityQuery<HandsComponent> handsQuery)
+        EntityQuery<SharedHandsComponent> handsQuery)
     {
         var dirty = false;
 
@@ -122,7 +122,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
 
     private bool ShouldCancel(DoAfter doAfter,
         EntityQuery<TransformComponent> xformQuery,
-        EntityQuery<HandsComponent> handsQuery)
+        EntityQuery<SharedHandsComponent> handsQuery)
     {
         var args = doAfter.Args;
 

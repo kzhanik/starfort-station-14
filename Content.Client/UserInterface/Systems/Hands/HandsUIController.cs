@@ -1,4 +1,5 @@
 using Content.Client.Gameplay;
+using Content.Client.Hands;
 using Content.Client.Hands.Systems;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Hands.Controls;
@@ -7,7 +8,6 @@ using Content.Shared.Cooldown;
 using Content.Shared.Hands.Components;
 using Content.Shared.Input;
 using Robust.Client.GameObjects;
-using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Robust.Shared.Input;
@@ -19,7 +19,6 @@ namespace Content.Client.UserInterface.Systems.Hands;
 public sealed class HandsUIController : UIController, IOnStateEntered<GameplayState>, IOnSystemChanged<HandsSystem>
 {
     [Dependency] private readonly IEntityManager _entities = default!;
-    [Dependency] private readonly IPlayerManager _player = default!;
 
     [UISystemDependency] private readonly HandsSystem _handsSystem = default!;
 
@@ -247,8 +246,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
 
         if (HandsGui != null &&
             _playerHandsComponent != null &&
-            _player.LocalPlayer?.ControlledEntity is { } playerEntity &&
-            _handsSystem.TryGetHand(playerEntity, handName, out var hand, _playerHandsComponent))
+            _playerHandsComponent.Hands.TryGetValue(handName, out var hand))
         {
             HandsGui.UpdatePanelEntity(hand.HeldEntity);
         }

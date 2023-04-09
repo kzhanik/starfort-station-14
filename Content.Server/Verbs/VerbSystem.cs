@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.Popups;
 using Content.Shared.Administration;
@@ -7,6 +6,8 @@ using Content.Shared.Database;
 using Content.Shared.Hands.Components;
 using Content.Shared.Verbs;
 using Robust.Server.Player;
+using Robust.Shared.Player;
+using System.Linq;
 
 namespace Content.Server.Verbs
 {
@@ -90,7 +91,7 @@ namespace Content.Server.Verbs
         {
             // first get the held item. again.
             EntityUid? holding = null;
-            if (TryComp(user, out HandsComponent? hands) &&
+            if (TryComp(user, out SharedHandsComponent? hands) &&
                 hands.ActiveHandEntity is EntityUid heldEntity)
             {
                 holding = heldEntity;

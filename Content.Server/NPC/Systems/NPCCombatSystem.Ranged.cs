@@ -8,7 +8,6 @@ namespace Content.Server.NPC.Systems;
 
 public sealed partial class NPCCombatSystem
 {
-    [Dependency] private readonly SharedCombatModeSystem _combat = default!;
     [Dependency] private readonly RotateToFaceSystem _rotate = default!;
 
     // TODO: Don't predict for hitscan
@@ -27,9 +26,9 @@ public sealed partial class NPCCombatSystem
 
     private void OnRangedStartup(EntityUid uid, NPCRangedCombatComponent component, ComponentStartup args)
     {
-        if (TryComp<CombatModeComponent>(uid, out var combat))
+        if (TryComp<SharedCombatModeComponent>(uid, out var combat))
         {
-            _combat.SetInCombatMode(uid, true, combat);
+            combat.IsInCombatMode = true;
         }
         else
         {
@@ -39,9 +38,9 @@ public sealed partial class NPCCombatSystem
 
     private void OnRangedShutdown(EntityUid uid, NPCRangedCombatComponent component, ComponentShutdown args)
     {
-        if (TryComp<CombatModeComponent>(uid, out var combat))
+        if (TryComp<SharedCombatModeComponent>(uid, out var combat))
         {
-            _combat.SetInCombatMode(uid, false, combat);
+            combat.IsInCombatMode = false;
         }
     }
 
@@ -49,7 +48,7 @@ public sealed partial class NPCCombatSystem
     {
         var bodyQuery = GetEntityQuery<PhysicsComponent>();
         var xformQuery = GetEntityQuery<TransformComponent>();
-        var combatQuery = GetEntityQuery<CombatModeComponent>();
+        var combatQuery = GetEntityQuery<SharedCombatModeComponent>();
         var query = EntityQueryEnumerator<NPCRangedCombatComponent, TransformComponent>();
 
         while (query.MoveNext(out var uid, out var comp, out var xform))
@@ -74,7 +73,7 @@ public sealed partial class NPCCombatSystem
 
             if (combatQuery.TryGetComponent(uid, out var combatMode))
             {
-                _combat.SetInCombatMode(uid, true, combatMode);
+                combatMode.IsInCombatMode = true;
             }
 
             if (!_gun.TryGetGun(uid, out var gunUid, out var gun))
