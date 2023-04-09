@@ -199,6 +199,15 @@
 	{
       "name": "idcluwne"
     },
+	{
+      "name": "idfield-medic"
+    },
+	{
+      "name": "idfield-trooper"
+    },
+	{
+      "name": "idfield-scientist"
+    },
     {
       "name": "gold-inhand-left",
       "directions": 4

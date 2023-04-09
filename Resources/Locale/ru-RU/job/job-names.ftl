@@ -41,6 +41,10 @@ job-name-ertmedic = медик ОБР
 job-name-ertjanitor = уборщик ОБР
 job-name-boxer = боксёр
 job-name-zookeeper = зоотехник
+job-name-ccagent = агент внутренних дел
+job-name-field-trooper = солдат
+job-name-field-medic = полевой врач
+job-name-field-scientist = полевой ученый
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = атмосферный техник
 JobBartender = бармен
@@ -85,3 +89,6 @@ JobTechnicalAssistant = технический ассистент
 JobWarden = смотритель
 JobBoxer = боксёр
 JobZookeeper = зоотехник
+JobFieldScientist = полевой ученый
+JobFieldTrooper = солдат
+JobFieldMedic = полевой врач

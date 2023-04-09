@@ -16,6 +16,9 @@
     {
       "name": "highwatertank"
     },
+	{
+      "name": "highfueltank"
+    },
     {
       "name": "highfueltank"
     },

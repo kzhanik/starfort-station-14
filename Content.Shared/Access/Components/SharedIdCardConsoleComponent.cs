@@ -56,6 +56,7 @@ namespace Content.Shared.Access.Components
             "Command",
             "Engineering",
             "External",
+            "Expedition",
             "HeadOfPersonnel",
             "HeadOfSecurity",
             "Hydroponics",

@@ -79,8 +79,9 @@
     - type: Appearance
       visuals:
         - type: AirlockVisualizer
-          animationTime: 0.6
-          emergencyAccessLayer: false
+#          animationTime: 0.6
+#          emergencyAccessLayer: false
+          simpleVisuals: true # Corvax-Resprite-Airlocks
     - type: WiresVisuals
     - type: Wires
       BoardName: "Firelock Control"
