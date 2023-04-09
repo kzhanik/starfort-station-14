@@ -2,7 +2,7 @@
 - type: emote
   id: Scream
   category: Vocal
-  chatMessages: [кричит!] # Corvax-Localization
+  chatMessages: [screams!]
   chatTriggers:
     - scream
     - screams
@@ -28,25 +28,11 @@
     - yells!
     - yelled
     - yelling
-    # Corvax-Localization-Start
-    - крик
-    - кричит
-    - кричит.
-    - кричит!
-    - ор
-    - орёт
-    - орёт.
-    - орёт!
-    - визг
-    - визжит
-    - визжит.
-    - визжит!
-    # Corvax-Localization-End
 
 - type: emote
   id: Laugh
   category: Vocal
-  chatMessages: [смеётся] # Corvax-Localization
+  chatMessages: [laughs]
   chatTriggers:
     - laugh
     - laughs
@@ -66,31 +52,12 @@
     - giggles!
     - giggling
     - giggled
-    # Corvax-Localization-Start
-    - смех
-    - смеется
-    - смеется.
-    - смеется!
-    - смеётся
-    - смеётся.
-    - смеётся!
-    - хохот
-    - хохочет
-    - хохочет.
-    - хохочет!
-    - хихикает
-    - хихикает.
-    - хихикает!
-    - хихикнул
-    - хихикнула
-    - ржёт
-    # Corvax-Localization-End
 
 # hand emotes
 - type: emote
   id: Clap
   category: Hands
-  chatMessages: [хлопает!] # Corvax-Localization
+  chatMessages: [claps!]
   chatTriggers:
     - clap
     - claps
@@ -98,26 +65,11 @@
     - claps!
     - clapping
     - clapped
-    # Corvax-Localization-Start
-    - хлопает
-    - хлопает.
-    - хлопает!
-    - хлопнул
-    - хлопнула
-    - хлопает в ладоши
-    - хлопает в ладоши.
-    - хлопает в ладоши!
-    - хлопнул в ладоши
-    - хлопнула в ладоши
-    - апплодирует
-    - апплодирует.
-    - апплодирует!
-    # Corvax-Localization-End
 
 - type: emote
   id: Snap
   category: Hands
-  chatMessages: [щёлкает пальцами] # Corvax-Localization
+  chatMessages: [snaps fingers] # snaps <{THEIR($ent)}> fingers?
   chatTriggers:
     - snap
     - snaps
@@ -132,25 +84,4 @@
     - snaps their fingers!
     - snapping fingers
     - snapped fingers
-    # Corvax-Localization-Start
-    - щелкает
-    - щелкает.
-    - щелкает!
-    - щелкнул
-    - щелкнула
-    - щёлкает
-    - щёлкает.
-    - щёлкает!
-    - щёлкнул
-    - щёлкнула
-    - щелкает пальцами
-    - щелкает пальцами.
-    - щелкает пальцами!
-    - щелкнул пальцами
-    - щелкнула пальцами
-    - щёлкает пальцами
-    - щёлкает пальцами.
-    - щёлкает пальцами!
-    - щёлкнул пальцами
-    - щёлкнула пальцами
-    # Corvax-Localization-End    
+
