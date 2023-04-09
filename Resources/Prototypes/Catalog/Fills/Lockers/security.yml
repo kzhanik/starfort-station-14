@@ -72,3 +72,20 @@
       - id: ClothingHeadHelmetBombSuit
       - id: ClothingOuterSuitBomb
       - id: ClothingMaskGas
+
+- type: entity
+  id: LockerExpeditionSecurityFilled
+  suffix: Expedition, Filled
+  parent: LockerSecurity
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+      - id: ClothingHeadHelmetHelmet
+      - id: ClothingOuterArmorBulletproof
+      - id: Flash
+      - id: ClothingEyesGlassesSecurity
+      - id: ClothingHeadsetExpedition
+      - id: ClothingHandsGlovesColorBlack
+      - id: ClothingShoesBootsJack
+      - id: WeaponRifleLecter

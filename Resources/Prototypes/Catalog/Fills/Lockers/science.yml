@@ -11,3 +11,14 @@
       - id: ClothingOuterCoatLab
       - id: AnomalyScanner
       - id: NodeScanner
+
+- type: entity
+  id: LockerExpeditionScienceFilled
+  suffix: Expedition, Filled
+  parent: LockerScientist
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingHandsGlovesLatex
+      - id: ClothingHeadsetExpedition
+      - id: ClothingMaskSterile
