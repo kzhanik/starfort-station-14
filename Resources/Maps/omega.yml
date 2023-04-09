@@ -97018,4 +97018,10 @@ entities:
   - pos: -19.5,16.5
     parent: 0
     type: Transform
+- uid: 12559
+  type: StationGoalRandom
+  components:
+  - pos: -7.012192,34.489746
+    parent: 0
+    type: Transform
 ...
