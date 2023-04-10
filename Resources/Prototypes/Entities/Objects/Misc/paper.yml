@@ -693,7 +693,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-khuynya
-    stampState: "paper_stamp-denied"
+    stampState: "paper_stamp-deny"
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: stamp-deny
@@ -705,7 +705,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-incorrect-form
-    stampState: "paper_stamp-denied"
+    stampState: "paper_stamp-deny"
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: stamp-deny
