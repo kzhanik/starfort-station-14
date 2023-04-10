@@ -10,6 +10,7 @@
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
       - id: WeaponRifleLecter
+      - id: ClothesShoesBootsMag
 
 - type: entity
   id: LockerExpeditionScienceFilled
@@ -21,3 +22,6 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetExpedition
       - id: ClothingMaskSterile
+      - id: NodeScanner
+      - id: MedikitFilled
+      - id: ClothesShoesBootsMag
