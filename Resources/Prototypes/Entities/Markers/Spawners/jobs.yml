@@ -538,3 +538,41 @@
     layers:
       - state: green
       - state: lawyer
+
+#Expedition
+
+- type: entity
+  id: SpawnPointFileldMedic
+  parent: SpawnPointJobBase
+  name: FileldMedic
+  components:
+  - type: SpawnPoint
+    job_id: FieldMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: doctor
+
+- type: entity
+  id: SpawnPointFileldScientist
+  parent: SpawnPointJobBase
+  name: FileldScientist
+  components:
+  - type: SpawnPoint
+    job_id: FieldScientist
+  - type: Sprite
+    layers:
+      - state: green
+      - state: scientist
+
+- type: entity
+  id: SpawnPointFileldTrooper
+  parent: SpawnPointJobBase
+  name: FileldTrooper
+  components:
+  - type: SpawnPoint
+    job_id: FieldTrooper
+  - type: Sprite
+    layers:
+      - state: green
+      - state: security_officer
