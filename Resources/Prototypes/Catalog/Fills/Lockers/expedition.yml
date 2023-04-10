@@ -1,0 +1,23 @@
+- type: entity
+  id: LockerExpeditionSecurityFilled
+  suffix: Expedition, Filled
+  parent: LockerSecurity
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+      - id: ClothingHeadsetExpedition
+      - id: ClothingHandsGlovesColorBlack
+      - id: ClothingShoesBootsJack
+      - id: WeaponRifleLecter
+
+- type: entity
+  id: LockerExpeditionScienceFilled
+  suffix: Expedition, Filled
+  parent: LockerBaseSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingHandsGlovesLatex
+      - id: ClothingHeadsetExpedition
+      - id: ClothingMaskSterile
