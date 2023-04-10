@@ -1,7 +1,7 @@
+using Content.Server.CombatMode;
 using Content.Server.Destructible;
 using Content.Server.NPC.Components;
 using Content.Server.NPC.Pathfinding;
-using Content.Shared.CombatMode;
 using Content.Shared.Doors.Components;
 using Content.Shared.NPC;
 using Robust.Shared.Physics;
@@ -115,7 +115,7 @@ public sealed partial class NPCSteeringSystem
             {
                 if (_melee.TryGetWeapon(uid, out var meleeUid, out var meleeWeapon) && meleeWeapon.NextAttack <= _timing.CurTime && TryComp<CombatModeComponent>(uid, out var combatMode))
                 {
-                    _combat.SetInCombatMode(uid, true, combatMode);
+                    combatMode.IsInCombatMode = true;
                     var destructibleQuery = GetEntityQuery<DestructibleComponent>();
 
                     // TODO: This is a hack around grilles and windows.
@@ -131,7 +131,7 @@ public sealed partial class NPCSteeringSystem
                         }
                     }
 
-                    _combat.SetInCombatMode(uid, false, combatMode);
+                    combatMode.IsInCombatMode = false;
 
                     if (obstacleEnts.Count == 0)
                         return SteeringObstacleStatus.Completed;

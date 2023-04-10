@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Hands.Components;
 using Content.Shared.Interaction;
@@ -7,7 +6,9 @@ using Content.Shared.Tabletop.Events;
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
+using Robust.Shared.Players;
 using Robust.Shared.Serialization;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Content.Shared.Tabletop
 {
@@ -113,7 +114,7 @@ namespace Content.Shared.Tabletop
             // CanSeeTable checks interaction action blockers. So no need to check them here.
             // If this ever changes, so that ghosts can spectate games, then the check needs to be moved here.
 
-            return TryComp(playerEntity, out HandsComponent? hands) && hands.Hands.Count > 0;
+            return TryComp(playerEntity, out SharedHandsComponent? hands) && hands.Hands.Count > 0;
         }
         #endregion
     }

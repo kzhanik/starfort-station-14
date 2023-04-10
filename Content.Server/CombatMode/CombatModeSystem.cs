@@ -11,10 +11,10 @@ namespace Content.Server.CombatMode
         {
             base.Initialize();
 
-            SubscribeLocalEvent<CombatModeComponent, ComponentGetState>(OnGetState);
+            SubscribeLocalEvent<SharedCombatModeComponent, ComponentGetState>(OnGetState);
         }
 
-        private void OnGetState(EntityUid uid, CombatModeComponent component, ref ComponentGetState args)
+        private void OnGetState(EntityUid uid, SharedCombatModeComponent component, ref ComponentGetState args)
         {
             args.State = new CombatModeComponentState(component.IsInCombatMode, component.ActiveZone);
         }
