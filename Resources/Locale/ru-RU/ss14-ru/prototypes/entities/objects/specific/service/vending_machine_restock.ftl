@@ -70,3 +70,6 @@ ent-VendingMachineRestockRobotics = набор пополнения Роботе
 ent-VendingMachineRestockHappyHonk = набор пополнения Хэппи Хонк
     .desc = Поместите эту коробку, полную веселья, в отсек для пополнения торгомата Хэппи Хонк.
     .suffix = { "" }
+ent-VendingMachineRestockFreightforwardersExpiditorsEquipment = набор пополнения ЭкспидиторМаг
+    .desc = Коробка, наполненная различным снаряжением для экспидиторов.
+    .suffix = { "Крутой kzhanik" }

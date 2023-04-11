@@ -1796,3 +1796,31 @@
     - state: dispenser
     - state: dispensereng
 
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineExpidition
+  name: ExpiMag
+  description: For those who consider themselves tough guys.
+  components:
+  - type: VendingMachine
+    pack: FreightforwardersExpiditorsEquipmentInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/expidition.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#9dc5c9"
+  - type: AccessReader
+    access: [["Expedition"]]

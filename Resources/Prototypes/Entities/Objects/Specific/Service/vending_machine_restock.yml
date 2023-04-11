@@ -438,3 +438,19 @@
     - state: green_bit
       shader: unshaded
     - state: refill_honk
+
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockFreightforwardersExpiditorsEquipment
+  name: Freightforwarders Vendor restock box
+  description: Have you seriously squandered NT property?
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - FreightforwardersExpiditorsEquipmentInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_expidition

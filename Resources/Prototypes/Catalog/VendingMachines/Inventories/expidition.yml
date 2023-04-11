@@ -1,0 +1,19 @@
+- type: vendingMachineInventory
+  id: FreightforwardersExpiditorsEquipmentInventory
+  startingInventory:
+    Crowbar: 3
+    Pickaxe: 4
+    OreBag: 1
+    Flare: 6
+    FlashlightLantern: 2
+    Floodlight: 4
+    HandheldGPSBasic: 2
+    RadioHandheld: 2
+    WeaponProtoKineticAccelerator: 2
+    CombatKnife: 3
+    InflatableWallStack1: 12
+    InflatableDoorStack1: 4
+    GasAnalyzer: 3
+    PartRodMetal: 3
+    MedkitFilled: 2
+    Bloodpack: 5

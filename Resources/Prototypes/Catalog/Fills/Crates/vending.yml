@@ -157,3 +157,11 @@
     contents:
       - id: VendingMachineRestockHappyHonk
         amount: 2
+
+- type: entity
+  id: CrateVendingMachineRestockFreightforwardersExpiditorsEquipmentFilled
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: VendingMachineRestockFreightforwardersExpiditorsEquipment
