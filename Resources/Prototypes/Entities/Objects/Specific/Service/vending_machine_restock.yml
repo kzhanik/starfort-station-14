@@ -454,3 +454,19 @@
     - state: green_bit
       shader: unshaded
     - state: refill_expidition
+
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockExpiditorsDrobeEquipment
+  name: ExpiDrobe restock box
+  description: When you run out of tough guy clothes.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - ExpeditorsDrobeInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_expiditiondrobe
