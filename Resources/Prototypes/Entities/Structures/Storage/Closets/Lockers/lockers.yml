@@ -404,8 +404,22 @@
   - type: Appearance
     visuals:
     - type: StorageVisualizer
-      state: fieldtroop
-      state_open: fieldtroop_open
+      state: fieldsci
+      state_open: fieldsci_open
       state_closed: fieldtroop_door
   - type: AccessReader
     access: [["Security"] , ["Expedition"]]
+
+- type: entity
+  id: LockerFieldMed
+  parent: LockerBaseSecure
+  name: expedition doctor's locker
+  components:
+  - type: Appearance
+    visuals:
+    - type: StorageVisualizer
+      state: fieldsci
+      state_open: fieldsci_open
+      state_closed: fieldmed_door
+  - type: AccessReader
+    access: [["Medical"] , ["Expedition"]]

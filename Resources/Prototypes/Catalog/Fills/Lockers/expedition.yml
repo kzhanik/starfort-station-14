@@ -25,3 +25,19 @@
       - id: NodeScanner
       - id: MedikitFilled
       - id: ClothesShoesBootsMag
+
+- type: entity
+  id: LockerFieldMedFilled
+  suffix: Filled
+  parent: LockerFieldMed
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzer
+      - id: ClothingHandsGlovesLatex
+      - id: ClothingHeadsetExpedition
+      - id: ClothingBeltMedical
+      - id: NitrousOxideTankFilled
+      - id: ClothingMaskSterile
+      - id: ClothesShoesBootsMag
+      - id: MedikitFilled
