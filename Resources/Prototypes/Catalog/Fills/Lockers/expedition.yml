@@ -10,7 +10,7 @@
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
       - id: WeaponRifleLecter
-      - id: ClothesShoesBootsMag
+      - id: ClothingShoesBootsMag
       - id: ClothingMaskGasExplorer
 
 - type: entity
@@ -24,8 +24,8 @@
       - id: ClothingHeadsetExpedition
       - id: ClothingMaskSterile
       - id: NodeScanner
-      - id: MedikitFilled
-      - id: ClothesShoesBootsMag
+      - id: MedkitFilled
+      - id: ClothingShoesBootsMag
       - id: ClothingMaskGasExplorer
 
 - type: entity
@@ -39,8 +39,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetExpedition
       - id: ClothingBeltMedicalFilled
-      - id: NitrousOxideTankFilled
       - id: ClothingMaskSterile
-      - id: ClothesShoesBootsMag
-      - id: MedikitFilled
+      - id: ClothingShoesBootsMag
+      - id: MedkitFilled
       - id: ClothingMaskGasExplorer
