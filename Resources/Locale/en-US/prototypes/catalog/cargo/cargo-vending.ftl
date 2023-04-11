@@ -57,5 +57,3 @@ ent-CrateVendingMachineRestockHappyHonk = { ent-CrateVendingMachineRestockHappyH
 
 ent-CrateVendingMachineRestockFreightforwardersExpiditorsEquipment = { ent-CrateVendingMachineRestockFreightforwardersExpiditorsEquipmentFilled }
     .desc = { ent-CrateVendingMachineRestockFreightforwardersExpiditorsEquipmentFilled.desc }
-
-
