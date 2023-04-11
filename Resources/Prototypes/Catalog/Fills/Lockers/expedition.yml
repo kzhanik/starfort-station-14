@@ -11,6 +11,7 @@
       - id: ClothingShoesBootsJack
       - id: WeaponRifleLecter
       - id: ClothesShoesBootsMag
+      - id: ClothingMaskGasExplorer
 
 - type: entity
   id: LockerFieldSciFilled
@@ -25,6 +26,7 @@
       - id: NodeScanner
       - id: MedikitFilled
       - id: ClothesShoesBootsMag
+      - id: ClothingMaskGasExplorer
 
 - type: entity
   id: LockerFieldMedFilled
@@ -36,8 +38,9 @@
       - id: HandheldHealthAnalyzer
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetExpedition
-      - id: ClothingBeltMedical
+      - id: ClothingBeltMedicalFilled
       - id: NitrousOxideTankFilled
       - id: ClothingMaskSterile
       - id: ClothesShoesBootsMag
       - id: MedikitFilled
+      - id: ClothingMaskGasExplorer
