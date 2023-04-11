@@ -205,3 +205,13 @@
   cost: 3500
   category: Science
   group: market
+
+- type: cargoProduct
+  id: CrateVendingMachineRestockExpiditorsDrobeEquipment
+  icon:
+    sprite: Objects/Specific/Service/vending_machine_restock.rsi
+    state: base
+  product: CrateVendingMachineRestockExpiditorsDrobeEquipmentFilled
+  cost: 2000
+  category: Science
+  group: market

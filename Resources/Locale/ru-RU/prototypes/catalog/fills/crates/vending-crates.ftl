@@ -38,3 +38,5 @@ ent-CrateVendingMachineRestockHappyHonkFilled = ящик пополнения Х
     .desc = Содержит набор пополнения торгомата Хэппи Хонк.
 ent-CrateVendingMachineRestockFreightforwardersExpiditorsEquipmentFilled = ящик пополнения ЭкспидиторМаг
     .desc = Содержит набор пополнения ЭкспидиторМаг
+ent-CrateVendingMachineRestockExpiditorsDrobeEquipmentFilled = ящик пополнения ЭкспиШкаф
+    .desc = Содержит набор пополнения ЭкспиШкаф

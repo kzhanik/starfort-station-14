@@ -1832,11 +1832,10 @@
   description: In case you want to look like the tough guys.
   components:
   - type: VendingMachine
-    pack: FreightforwardersExpiditorsEquipmentInventory
+    pack: ExpeditorsDrobeInventory
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    denyState: deny-unshaded
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/expeditorsdrobe.rsi
     layers:

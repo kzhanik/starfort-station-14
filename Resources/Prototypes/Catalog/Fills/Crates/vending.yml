@@ -165,3 +165,11 @@
   - type: StorageFill
     contents:
       - id: VendingMachineRestockFreightforwardersExpiditorsEquipment
+
+- type: entity
+  id: CrateVendingMachineRestockExpiditorsDrobeEquipmentFilled
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: VendingMachineRestockExpiditorsDrobeEquipment
