@@ -113,3 +113,12 @@
     - MobXenoRunner
     - MobXenoSpitter
     chance: 1
+
+- type: entity
+  name: random xeno spawner
+  suffix: half chance
+  id: SpawnMobXenoHalfRandom
+  parent: SpawnMobXenoRandom
+  components:
+  - type: RandomSpawner
+    chance: 0.5
