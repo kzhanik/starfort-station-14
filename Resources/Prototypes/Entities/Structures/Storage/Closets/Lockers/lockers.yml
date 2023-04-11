@@ -383,7 +383,7 @@
 # Expedition
 
 - type: entity
-  id: LockerExpeditionScience
+  id: LockerFieldSci
   parent: LockerBase
   name: expedition scientist's locker
   components:
@@ -397,7 +397,7 @@
       access: [["Research"] , ["Expedition"]]
 
 - type: entity
-  id: LockerExpeditionSecurity
+  id: LockerFieldTroop
   parent: LockerBaseSecure
   name: expedition soldier's locker
   components:

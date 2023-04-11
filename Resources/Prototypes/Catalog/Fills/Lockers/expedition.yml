@@ -1,7 +1,7 @@
 - type: entity
-  id: LockerExpeditionSecurityFilled
+  id: LockerFieldTroopFilled
   suffix: Expedition, Filled
-  parent: LockerBaseSecure
+  parent: LockerFieldTroop
   components:
   - type: StorageFill
     contents:
@@ -13,9 +13,9 @@
       - id: ClothesShoesBootsMag
 
 - type: entity
-  id: LockerExpeditionScienceFilled
+  id: LockerFieldSciFilled
   suffix: Expedition, Filled
-  parent: LockerBaseSecure
+  parent: LockerFieldSci
   components:
   - type: StorageFill
     contents:
