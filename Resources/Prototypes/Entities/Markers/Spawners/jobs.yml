@@ -551,7 +551,8 @@
   - type: Sprite
     layers:
       - state: green
-      - state: field_medic
+      - sprite: Markers\jobs.rsi
+        state: field_medic
 
 - type: entity
   id: SpawnPointFileldScientist
@@ -563,7 +564,8 @@
   - type: Sprite
     layers:
       - state: green
-      - state: field_scientist
+      - sprite: Markers\jobs.rsi
+        state: field_scientist
 
 - type: entity
   id: SpawnPointFileldTrooper
@@ -575,4 +577,5 @@
   - type: Sprite
     layers:
       - state: green
-      - state: field_trooper
+      - sprite: Markers\jobs.rsi
+        state: field_trooper
