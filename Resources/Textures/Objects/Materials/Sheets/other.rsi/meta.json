@@ -96,6 +96,9 @@
     {
       "name": "uranium-inhand-right",
       "directions": 4
+    },
+    {
+      "name": "plasma_3"
     }
   ]
 }
