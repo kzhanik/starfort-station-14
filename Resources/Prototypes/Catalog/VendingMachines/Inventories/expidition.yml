@@ -1,5 +1,5 @@
 - type: vendingMachineInventory
-  id: FreightforwardersExpiditorsEquipmentInventory
+  id: FreightforwardersEquipmentInventory
   startingInventory:
     MedkitFilled: 2
     Bloodpack: 3

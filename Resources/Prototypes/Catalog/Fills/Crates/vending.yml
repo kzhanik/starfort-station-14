@@ -159,17 +159,17 @@
         amount: 2
 
 - type: entity
-  id: CrateVendingMachineRestockFreightforwardersExpiditorsEquipmentFilled
+  id: CrateVendingMachineRestockExpeditionEquipmentFilled
   parent: CrateGenericSteel
   components:
   - type: StorageFill
     contents:
-      - id: VendingMachineRestockFreightforwardersExpiditorsEquipment
+      - id: VendingMachineRestockExpeditionEquipment
 
 - type: entity
-  id: CrateVendingMachineRestockExpiditorsDrobeEquipmentFilled
+  id: CrateVendingMachineRestockExpeditionDrobeEquipmentFilled
   parent: CrateGenericSteel
   components:
   - type: StorageFill
     contents:
-      - id: VendingMachineRestockExpiditorsDrobeEquipment
+      - id: VendingMachineRestockExpeditionDrobeEquipment

@@ -1803,7 +1803,7 @@
   description: For those who consider themselves tough guys.
   components:
   - type: VendingMachine
-    pack: FreightforwardersExpiditorsEquipmentInventory
+    pack: FreightforwardersEquipmentInventory
     offState: off
     brokenState: broken
     normalState: normal-unshaded
@@ -1827,7 +1827,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: VendingMachineExpeditorsDrobe
+  id: VendingMachineExpeditionDrobe
   name: ExpiMag
   description: In case you want to look like the tough guys.
   components:

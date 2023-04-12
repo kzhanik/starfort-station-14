@@ -441,13 +441,13 @@
 
 - type: entity
   parent: BaseVendingMachineRestock
-  id: VendingMachineRestockFreightforwardersExpiditorsEquipment
+  id: VendingMachineRestockExpeditionEquipment
   name: Freightforwarders Vendor restock box
   description: Have you seriously squandered NT property?
   components:
   - type: VendingMachineRestock
     canRestock:
-    - FreightforwardersExpiditorsEquipmentInventory
+    - FreightforwardersEquipmentInventory
   - type: Sprite
     layers:
     - state: base
@@ -457,7 +457,7 @@
 
 - type: entity
   parent: BaseVendingMachineRestock
-  id: VendingMachineRestockExpiditorsDrobeEquipment
+  id: VendingMachineRestockExpeditionDrobeEquipment
   name: ExpiDrobe restock box
   description: When you run out of tough guy clothes.
   components:

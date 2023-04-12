@@ -197,21 +197,21 @@
   group: market
 
 - type: cargoProduct
-  id: CrateVendingMachineRestockFreightforwardersExpiditorsEquipment
+  id: CrateVendingMachineRestockExpeditionEquipment
   icon:
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
-  product: CrateVendingMachineRestockFreightforwardersExpiditorsEquipmentFilled
+  product: CrateVendingMachineRestockExpeditionEquipmentFilled
   cost: 3500
   category: Science
   group: market
 
 - type: cargoProduct
-  id: CrateVendingMachineRestockExpiditorsDrobeEquipment
+  id: CrateVendingMachineRestockExpeditionDrobeEquipment
   icon:
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
-  product: CrateVendingMachineRestockExpiditorsDrobeEquipmentFilled
+  product: CrateVendingMachineRestockExpeditionDrobeEquipmentFilled
   cost: 2000
   category: Science
   group: market
